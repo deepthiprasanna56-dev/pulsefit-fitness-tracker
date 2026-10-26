@@ -50,10 +50,10 @@ export default function Nutrition({ onLogMeal }) {
 
   return (
     <section id="nutrition" className="py-20 bg-slate-900/40 relative border-t border-slate-800/80 w-full overflow-x-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full min-w-0">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-2">
               <Utensils className="w-3.5 h-3.5" />
@@ -70,6 +70,22 @@ export default function Nutrition({ onLogMeal }) {
           <div className="text-xs text-slate-400 bg-slate-950 px-4 py-2.5 rounded-xl border border-slate-800 flex items-center gap-2">
             <Apple className="w-4 h-4 text-emerald-400" />
             <span>Target: 2,400 kcal | 160g Protein</span>
+          </div>
+        </div>
+
+        {/* HD Nutrition Banner */}
+        <div className="relative w-full h-44 sm:h-60 rounded-2xl overflow-hidden mb-10 shadow-xl">
+          <img
+            src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1400&q=85&fit=crop&auto=format"
+            alt="Healthy nutrition and meal prep"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/50 to-transparent flex items-center pl-6 sm:pl-10">
+            <div>
+              <p className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-1">Performance Fuel</p>
+              <h3 className="text-xl sm:text-3xl font-black text-white leading-tight">Eat Smart. Train Hard.</h3>
+              <p className="text-slate-300 text-xs sm:text-sm mt-1.5">Precision macros for elite performance</p>
+            </div>
           </div>
         </div>
 

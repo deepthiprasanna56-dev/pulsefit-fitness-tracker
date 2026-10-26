@@ -155,7 +155,7 @@ export default function App() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1">
+      <main className="flex-1 w-full min-w-0 overflow-x-hidden">
         {/* Hero Section */}
         <Hero stats={stats} />
 

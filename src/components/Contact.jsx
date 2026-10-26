@@ -47,7 +47,7 @@ export default function Contact({ onSubmitMessage }) {
 
   return (
     <section id="contact" className="py-20 bg-slate-900/40 relative border-t border-slate-800/80 w-full overflow-x-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full min-w-0">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -125,6 +125,20 @@ export default function Contact({ onSubmitMessage }) {
               <p className="text-xs text-slate-300 leading-snug">
                 Average reply time is under 15 minutes. Certified sports nutritionists and strength coaches are on standby.
               </p>
+            </div>
+
+            {/* HD Coaching Team Image */}
+            <div className="relative h-44 rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&q=85&fit=crop&auto=format"
+                alt="Personal trainer coaching session"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-slate-950/50" />
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <p className="text-white text-xs font-bold">🏋️‍♀️ Expert coaches ready to guide your transformation</p>
+                <p className="text-slate-300 text-[11px] mt-0.5">1-on-1 sessions available 24/7</p>
+              </div>
             </div>
 
           </div>

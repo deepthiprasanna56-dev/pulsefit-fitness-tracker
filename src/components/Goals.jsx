@@ -79,7 +79,7 @@ export default function Goals({ onGoalUpdated }) {
 
   return (
     <section id="goals" className="py-20 bg-slate-950 relative border-t border-slate-800/80 w-full overflow-x-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full min-w-0">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
@@ -109,6 +109,20 @@ export default function Goals({ onGoalUpdated }) {
               <Plus className="w-4 h-4 stroke-[3]" />
               <span>Create New Goal</span>
             </button>
+          </div>
+        </div>
+
+        {/* ── HD Motivational Banner ── */}
+        <div className="relative w-full h-36 sm:h-44 rounded-2xl overflow-hidden mb-8 shadow-xl">
+          <img
+            src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1400&q=85&fit=crop&auto=format"
+            alt="Athlete achieving fitness goals"
+            className="w-full h-full object-cover object-top"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/60 to-transparent flex items-center px-6 sm:px-10">
+            <p className="text-white font-black text-base sm:text-xl max-w-md leading-snug">
+              "Champions aren't made in gyms — they're made from vision, desire, and will." 🏆
+            </p>
           </div>
         </div>
 

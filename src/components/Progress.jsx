@@ -28,7 +28,7 @@ export default function Progress() {
 
   return (
     <section id="progress" className="py-20 bg-slate-900/40 relative border-t border-slate-800/80 w-full overflow-x-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full min-w-0">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
@@ -111,6 +111,28 @@ export default function Progress() {
               </span>
             </div>
             <p className="text-[11px] text-slate-500 mt-1">Body fat dropped from 19.8% to 18.2%</p>
+          </div>
+        </div>
+
+        {/* ── HD Motivational Banner ── */}
+        <div className="relative w-full h-36 sm:h-44 rounded-2xl overflow-hidden mb-8 shadow-xl">
+          <img
+            src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=1400&q=85&fit=crop&auto=format"
+            alt="Athlete tracking progress"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-slate-950/65 flex items-center px-6 sm:px-10">
+            <div className="flex items-center gap-4">
+              <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-emerald-400 shrink-0" />
+              <div>
+                <p className="text-white font-black text-base sm:text-xl leading-tight">
+                  Your Performance Is Trending Up 📈
+                </p>
+                <p className="text-slate-300 text-xs sm:text-sm mt-0.5">
+                  Consistent effort compounds into extraordinary results.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
