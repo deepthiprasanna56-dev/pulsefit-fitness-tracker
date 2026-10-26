@@ -33,7 +33,7 @@ export default function Dashboard({ stats, onUpdateStats, onQuickLogOpen }) {
 
   return (
     <section id="dashboard" className="py-20 bg-slate-900/60 relative border-t border-slate-800/80 w-full overflow-x-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full min-w-0">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
@@ -247,7 +247,7 @@ export default function Dashboard({ stats, onUpdateStats, onQuickLogOpen }) {
                   Drinking water helps transport oxygen to muscles, prevents cramping, and optimizes metabolic rate. Log your glasses below:
                 </p>
 
-                <div className="flex flex-wrap items-center gap-2.5">
+                <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-2.5">
                   <button
                     onClick={() => handleWaterAdd(250)}
                     className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold bg-cyan-500/15 text-cyan-300 hover:bg-cyan-500/25 border border-cyan-500/30 transition-all hover:scale-105"

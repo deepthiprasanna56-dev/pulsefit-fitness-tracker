@@ -47,7 +47,7 @@ export default function Contact({ onSubmitMessage }) {
 
   return (
     <section id="contact" className="py-20 bg-slate-900/40 relative border-t border-slate-800/80 w-full overflow-x-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full min-w-0">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
