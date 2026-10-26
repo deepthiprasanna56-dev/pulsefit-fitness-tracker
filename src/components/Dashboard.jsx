@@ -32,7 +32,7 @@ export default function Dashboard({ stats, onUpdateStats, onQuickLogOpen }) {
   };
 
   return (
-    <section id="dashboard" className="py-20 bg-slate-900/60 relative border-t border-slate-800/80">
+    <section id="dashboard" className="py-20 bg-slate-900/60 relative border-t border-slate-800/80 w-full overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

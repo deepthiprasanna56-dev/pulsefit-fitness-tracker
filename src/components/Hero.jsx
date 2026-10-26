@@ -28,11 +28,11 @@ export default function Hero({ stats }) {
   };
 
   return (
-    <section id="home" className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden bg-slate-950">
-      {/* Background Glow Accents */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-emerald-500/10 blur-[130px] rounded-full pointer-events-none" />
-      <div className="absolute top-1/3 -left-20 w-[400px] h-[400px] bg-cyan-500/10 blur-[140px] rounded-full pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-[450px] h-[350px] bg-emerald-600/10 blur-[150px] rounded-full pointer-events-none" />
+    <section id="home" className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden bg-slate-950 w-full">
+      {/* Background Glow Accents — capped so they never cause horizontal scroll */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(600px,100vw)] h-[350px] bg-emerald-500/10 blur-[130px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/3 -left-20 w-[min(400px,80vw)] h-[400px] bg-cyan-500/10 blur-[140px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-10 right-0 w-[min(450px,80vw)] h-[350px] bg-emerald-600/10 blur-[150px] rounded-full pointer-events-none" />
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b08_1px,transparent_1px),linear-gradient(to_bottom,#1e293b08_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -108,8 +108,8 @@ export default function Hero({ stats }) {
             </div>
 
             {/* Social Proof */}
-            <div className="flex items-center justify-center lg:justify-start gap-4 pt-2">
-              <div className="flex -space-x-2">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+              <div className="flex -space-x-2 shrink-0">
                 {['https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face',
                   'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
                   'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face',
@@ -123,20 +123,20 @@ export default function Hero({ stats }) {
                 ))}
               </div>
               <div className="text-left text-xs">
-                <div className="flex items-center gap-1 text-amber-400 font-bold">
+                <div className="flex flex-wrap items-center gap-1 text-amber-400 font-bold">
                   <span>★ 4.9/5 Rating</span>
                   <span className="text-slate-500 font-normal">|</span>
-                  <span className="text-slate-300 font-normal">Over 25,000+ active athletes</span>
+                  <span className="text-slate-300 font-normal">25,000+ active athletes</span>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Right Column: Visual Dashboard Glassmorphism Card Showcase */}
-          <div className="lg:col-span-5 relative">
+          <div className="lg:col-span-5 relative overflow-hidden">
             
             {/* Main Interactive Floating Display */}
-            <div className="relative mx-auto max-w-md lg:max-w-none">
+            <div className="relative mx-auto max-w-md lg:max-w-none px-4 sm:px-0">
               
               {/* Outer decorative gradient border */}
               <div className="p-1 rounded-3xl bg-gradient-to-b from-slate-700 via-slate-800/80 to-emerald-500/30 shadow-2xl shadow-emerald-950/40">
@@ -251,8 +251,8 @@ export default function Hero({ stats }) {
                 </div>
               </div>
 
-              {/* Floating Orbiting Badges */}
-              <div className="hidden sm:flex absolute -top-5 -right-6 p-3 rounded-xl bg-slate-900/90 border border-slate-700/80 shadow-xl backdrop-blur-md items-center gap-2.5 animate-float">
+              {/* Floating Orbiting Badges — hidden on mobile to prevent overflow */}
+              <div className="hidden lg:flex absolute -top-5 -right-6 p-3 rounded-xl bg-slate-900/90 border border-slate-700/80 shadow-xl backdrop-blur-md items-center gap-2.5 animate-float">
                 <div className="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400">
                   <TrendingUp className="w-4 h-4" />
                 </div>
@@ -262,7 +262,7 @@ export default function Hero({ stats }) {
                 </div>
               </div>
 
-              <div className="hidden sm:flex absolute -bottom-4 -left-6 p-3 rounded-xl bg-slate-900/90 border border-slate-700/80 shadow-xl backdrop-blur-md items-center gap-2.5">
+              <div className="hidden lg:flex absolute -bottom-4 -left-6 p-3 rounded-xl bg-slate-900/90 border border-slate-700/80 shadow-xl backdrop-blur-md items-center gap-2.5">
                 <div className="w-8 h-8 rounded-lg bg-cyan-500/20 flex items-center justify-center text-cyan-400">
                   <Zap className="w-4 h-4" />
                 </div>

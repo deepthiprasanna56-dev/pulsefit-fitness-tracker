@@ -78,7 +78,7 @@ export default function Goals({ onGoalUpdated }) {
   const completedCount = goals.filter((g) => g.completed).length;
 
   return (
-    <section id="goals" className="py-20 bg-slate-950 relative border-t border-slate-800/80">
+    <section id="goals" className="py-20 bg-slate-950 relative border-t border-slate-800/80 w-full overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

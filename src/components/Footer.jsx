@@ -46,7 +46,7 @@ export default function Footer({ onSubscribe }) {
   };
 
   return (
-    <footer className="bg-slate-950 text-slate-400 border-t border-slate-900 pt-16 pb-12">
+    <footer className="bg-slate-950 text-slate-400 border-t border-slate-900 pt-16 pb-12 w-full overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Content */}
